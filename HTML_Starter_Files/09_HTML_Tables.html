@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table TAG</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+        }
+        table, th, td{
+            border: 2px solid orange;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px;
+        }
+        #custom thead{
+            background-color: red;
+            color: white;
+        }
+        #custom tbody{
+            background-color: seagreen;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Simple Table -->
+    <h3> Simple Table </h3>
+    <table width="100%">
+        <thead>
+            <tr  >
+                <th>Serial No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Adress</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Jamil</td>
+                <td>25</td>
+                <td>Rangpur</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Anowar</td>
+                <td>29</td>
+                <td>Cox's bajar</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mobarak</td>
+                <td>23</td>
+                <td>Shitakundo</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- Table with Col Span -->
+    <h3> Table with Col Span </h3>
+    <table width="100%">
+        <thead>
+            <tr  >
+                <th>Serial No</th>
+                <th colspan="2">Name & Age</th>
+                
+                <th>Adress</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Jamil</td>
+                <td>25</td>
+                <td>Rangpur</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Anowar</td>
+                <td>29</td>
+                <td>Cox's bajar</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mobarak</td>
+                <td>23</td>
+                <td>Shitakundo</td>
+            </tr>
+        </tbody>
+    </table>    
+
+
+    <!-- Table With Row Span -->
+    <h3> Table With Row Span </h3>
+    <table width="100%">
+        <thead>
+            <tr  >
+                <th>Serial No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Adress</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>Jamil</td>
+                <td>25</td>
+                <td>Rangpur</td>
+            </tr>
+            <tr>
+                <td>Anowar</td>
+                <td>29</td>
+                <td>Cox's bajar</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mobarak</td>
+                <td>23</td>
+                <td>Shitakundo</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Custom Table with CSS -->
+    <h3> Custom Table with CSS </h3>
+    <table width="100%" id="custom">
+        <thead>
+            <tr  >
+                <th>Serial No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Adress</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Jamil</td>
+                <td>25</td>
+                <td>Rangpur</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Anowar</td>
+                <td>29</td>
+                <td>Cox's bajar</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mobarak</td>
+                <td>23</td>
+                <td>Shitakundo</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
